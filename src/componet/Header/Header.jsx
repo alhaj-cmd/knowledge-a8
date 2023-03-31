@@ -8,10 +8,9 @@ import Navbar from 'react-bootstrap/Navbar';
 const Header = () => {
     return (
         <div>
-            <h1>hello</h1>
             <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">Knowledge Cafe</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -22,7 +21,9 @@ const Header = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About US</Nav.Link>
             <Nav.Link href="#contract">Contract</Nav.Link>
-            <img src="/public/Background (1).png" alt="" />
+            <img  width="30"
+              height="30"
+              className="d-inline-block align-top" src="/public/Background (1).png" alt="" />
            
           </Nav>
          
