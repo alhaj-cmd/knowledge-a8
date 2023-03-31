@@ -1,10 +1,28 @@
-import React from 'react';
 
-const Aside = ({personCount}) => {
-    console.log(personCount);
+import './Aside.css';
+
+const Aside = ({ carts, readTimes }) => {
+    // console.log(carts);
+    let times = 0;
+    for (const time of readTimes) {
+        times += time.time
+
+    }
     return (
         <div>
-            
+            <div className='card card-head'>
+                <h5>Spend time on read :{times} min</h5>
+            </div>
+            <div className="card card-body">
+                <h5>Bookmarked Blogs : {carts.length} </h5>
+
+                {carts.map((data, index) => (
+                    <div className='py-3 ' key={index}>
+                        <h6 className="card card-title align-items-center p-5">{data.title}</h6>
+                    </div>
+                ))}
+
+            </div>
         </div>
     );
 };
