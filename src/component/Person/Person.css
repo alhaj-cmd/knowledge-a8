@@ -9,3 +9,10 @@
    .author-title p{
    height: 0;
 }
+.title{
+    text-decoration: underline;
+    color: #6047EC;
+}
+.icon{
+    width: 120px;
+}

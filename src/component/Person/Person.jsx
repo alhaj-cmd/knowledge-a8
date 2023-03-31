@@ -1,5 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import './Person.css'
 
 const Person = ({person}) => {
@@ -23,12 +25,12 @@ const Person = ({person}) => {
                    
 
                     </div>
-                    <p>{time} min read</p>
+                    <span className='icon'>{time} min read <FontAwesomeIcon icon={faBookmark} /></span>
 
                 </div>
                 <h4>{title}</h4>
-                <span>#beginners #programming</span>
-                <p>Mark as read</p>
+                <span>#beginners  #programming</span>
+                <p className='title'>Mark as read</p>
             </div>
           </Card.Text>
         </Card.Body>
