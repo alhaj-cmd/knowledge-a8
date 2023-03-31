@@ -6,27 +6,28 @@ const Person = ({person}) => {
     console.log(person)
     const {name, coverImg, picture, time, date, title} = person;
     return (
-        <div>
+        <div className='mb-2'>
             <Card fluid>
         <Card.Img variant="top" src={coverImg} />
         <Card.Body>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
             <div>
-                <div className="author d-flex justify-content-around">
-                    <div className="author-title d-flex">
-                        <img src={picture} alt="" />
+                <div className="author d-flex mb-3">
+                    <div className="author-title d-flex align-items-center ">
+                     
+                     <img src={picture} alt="" />
                         <div>
-                            <p>{name}</p>
+                            <h5>{name}</h5>
                             <p>{date}</p>
                         </div>
+                   
 
                     </div>
                     <p>{time} min read</p>
 
                 </div>
                 <h4>{title}</h4>
+                <span>#beginners #programming</span>
                 <p>Mark as read</p>
             </div>
           </Card.Text>
