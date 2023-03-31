@@ -8,8 +8,8 @@ import Navbar from 'react-bootstrap/Navbar';
 const Header = () => {
     return (
         <div>
-            <Navbar bg="light" expand="lg">
-      <Container fluid>
+            <Navbar  expand="lg">
+      <Container fluid className='header'>
         <Navbar.Brand href="#">Knowledge Cafe</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

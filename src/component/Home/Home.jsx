@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
+import Person from '../Person/Person';
+
 
 
 const Home = () => {
@@ -17,13 +19,13 @@ const Home = () => {
         <div>
            <div className="container mt-5 row row-cols-1">
             <div className="card-right  col-md-9">
-             {/* {
-                    persons.map(person => <PersonCard
-                        key={person.id}
-                        person ={person}
-                        ></PersonCard>)
-                }  */}
-               <span>{persons}</span>
+              {
+                    persons.map(person => <Person
+                    key={person.id}
+                    person = {person}
+                    ></Person>)
+                }  
+             
              
             </div>
             <div className="card-left card col-md-3">

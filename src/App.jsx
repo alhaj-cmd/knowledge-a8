@@ -1,8 +1,8 @@
 
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './componet/Header/Header';
-import Home from './componet/Home/Home';
+import Header from './component/Header/Header';
+import Home from './component/Home/Home';
 
 function App() {
   
