@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Person from '../Person/Person';
+import Aside from '../Aside/Aside';
 
 
 
 const Home = () => {
    
         const [persons, setPerson] = useState([]);
+        
         useEffect(()=>{
     
             fetch('/public/fakeData.json')
@@ -16,8 +18,8 @@ const Home = () => {
     
    
     return (
-        <div>
-           <div className="container mt-5 row row-cols-1">
+        <div className='container'>
+           <div className="mt-5 row row-cols-1">
             <div className="card-right  col-md-9">
               {
                     persons.map(person => <Person
@@ -30,6 +32,7 @@ const Home = () => {
             </div>
             <div className="card-left card col-md-3">
                 <h4>aside</h4>
+                <Aside></Aside>
 
             </div>
            </div>

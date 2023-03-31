@@ -25,7 +25,7 @@ const Person = ({person}) => {
                    
 
                     </div>
-                    <span className='icon'>{time} min read <FontAwesomeIcon icon={faBookmark} /></span>
+                    <span className='icon'>{time} min read <FontAwesomeIcon  icon={faBookmark} /></span>
 
                 </div>
                 <h4>{title}</h4>
