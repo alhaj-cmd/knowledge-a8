@@ -2,10 +2,14 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Person from '../Person/Person';
 import Aside from '../Aside/Aside';
+import { toast } from 'react-toastify';
+
+
 
 
 
 const Home = () => {
+
 
     const [carts, setCarts] = useState([]);
 
@@ -22,10 +26,25 @@ const Home = () => {
 
     // handlecount blogs
     const handleCount = (blogs) => {
+
+
+        toast('🦄 Wow so easy!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
+
         const newCart = [...carts, blogs];
         setCarts(newCart);
 
+
     };
+
 
     // readtime set count
     const readTimeCount = (readTime) => {
@@ -43,6 +62,7 @@ const Home = () => {
                             key={person.id}
                             person={person}
                             handleCount={handleCount}
+
                             readTimeCount={readTimeCount}
 
                         ></Person>)

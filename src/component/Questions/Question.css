@@ -1,0 +1,10 @@
+table, th, td {
+    border:1px solid black;
+    padding: 5px;
+  }
+  table{
+    width: 100%;
+  }
+  .heading{
+    color: #6047EC;
+  }

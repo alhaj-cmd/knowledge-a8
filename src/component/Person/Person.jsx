@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import './Person.css'
 
+
 const Person = ({ person, handleCount, readTimeCount }) => {
     // console.log('click',handleCount)
 
@@ -28,7 +29,8 @@ const Person = ({ person, handleCount, readTimeCount }) => {
 
 
                                 </div>
-                                <span className='icon'>{time} min read <FontAwesomeIcon onClick={() => handleCount(person)} icon={faBookmark} /></span>
+                                <p className='icon'>{time} min read <FontAwesomeIcon onClick={() => handleCount(person)} icon={faBookmark} /></p>
+                              
 
                             </div>
                             <h4>{title}</h4>
