@@ -10,7 +10,7 @@ const Header = () => {
         <div>
             <Navbar  expand="lg">
       <Container fluid className='header'>
-        <Navbar.Brand href="#">Knowledge Cafe</Navbar.Brand>
+        <Navbar.Brand href="#">Open AI</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -23,7 +23,7 @@ const Header = () => {
             <Nav.Link href="#contract">Contract</Nav.Link>
             <img  width="30"
               height="30"
-              className="d-inline-block align-top" src="/public/Background (1).png" alt="" />
+              className="d-inline-block align-top" src="/src/assets/icon.png" alt="" />
            
           </Nav>
          

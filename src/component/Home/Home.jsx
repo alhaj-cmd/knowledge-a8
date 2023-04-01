@@ -18,10 +18,10 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch('/public/fakeData.json')
+        fetch('products.json')
             .then(res => res.json())
             .then(data => setPerson(data))
-    }, [])
+    }, []);
 
 
     // handlecount blogs
