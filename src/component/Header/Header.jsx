@@ -23,7 +23,7 @@ const Header = () => {
             <Nav.Link href="#contract">Contract</Nav.Link>
             <img  width="30"
               height="30"
-              className="d-inline-block align-top" src="/src/assets/icon.png" alt="" />
+              className="d-inline-block align-top" src="icon.png" alt="" />
            
           </Nav>
          
